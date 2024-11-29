@@ -29,7 +29,7 @@ class _RecipeHomeScreenState extends State<RecipeHomeScreen> {
   void filterRecipes(String query) {
     if (query.isEmpty) {
       setState(() {
-        filteredRecipes = _recipes; // If the search is empty, show all recipes
+        filteredRecipes = _recipes; // the search is empty, showing all recipes
       });
     } else {
       setState(() {
@@ -103,7 +103,7 @@ class _RecipeHomeScreenState extends State<RecipeHomeScreen> {
       ),
       body: Column(
         children: [
-          // Search bar at the top
+        
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Container(
